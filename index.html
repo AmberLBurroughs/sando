@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>Sandwiches as a Service</title>
+  <link rel="shortcut icon" href="sandwich.ico">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300|Nanum+Gothic:300" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+  <noscript>
+    You need to enable JavaScript to run this webpage.
+  </noscript>
+  <main>
+    <!-- Heading with tab buttons -->
+    <section class="skew__00">
+      <section class="skew__content">
+        <h1 class="title">Hey! Do you want to <span class="together">receive sandwiches</span></h1>
+        <h1 class="title spacer">on a monthly basis?</h1>
+        <h4>Sandwiches as a service</h4>
+        <h4>Find out more about our pricing and features!</h4>
+        <button
+          class="btn tabs tab__00 basic__plan"
+          title="basic sandwich plan"
+          tabindex=""
+          data-plan-title="basic-plan"
+          data-tab-type="btn">Basic Plan</button>
+
+        <button
+          class="btn tabs tab__01 btn__active gourmet__plan"
+          title="gourmet sandwich plan"
+          tabindex=""
+          data-plan-title="gourmet__plan"
+          data-tab-type="btn">Gourmet Plan</button>
+      </section>
+    </section>
+
+    <aside class="layered__img__00">
+      <img src="assets/img/sandwich__top__00.png" alt="stacked sub sandwiches" title="delicious sub sandwiches"/>
+    </aside>
+
+    <!-- Plan title & description -->
+    <section id="plan__description">
+      <section id="gourmet__descript" class="gourmet plan__content">
+        <h1 class="spacer">Gourmet</h1>
+        <h4>Monthly sandwich plan includes</h4>
+        <h4>premium mayonnaise &amp; pickles</h4>
+        <section class="plan__icon">
+          <figure class="plan__icon__wrap">
+            <img src="assets/img/sandwich__icon.png" alt="" title="gourmet sandwich" class="plan__icon" />
+          </figure>
+          <figure class="plan__icon__wrap">
+            <img src="assets/img/mayo__icon.png" alt="" title="premium mayonnaise" class="plan__icon" />
+          </figure>
+          <figure class="plan__icon__wrap">
+            <img src="assets/img/pickle__icon.png" alt="" title="free pickles" class="plan__icon" />
+          </figure>
+        </section>
+      </section>
+      <section id="basic__descript" class="basic plan__content hide">
+        <h1 class="spacer">Basic</h1>
+        <h4>Monthly sandwich plan includes</h4>
+        <h4>premium mayonnaise</h4>
+        <section class="plan__icon">
+          <figure class="plan__icon__wrap">
+            <img src="assets/img/sandwich__icon.png" alt="" title="gourmet sandwich" class="plan__icon" />
+          </figure>
+          <figure class="plan__icon__wrap">
+            <img src="assets/img/mayo__icon.png" alt="" title="premium mayonnaise" class="plan__icon" />
+          </figure>
+        </section>
+      </section>
+    </section>
+
+    <!-- Plan quantity, pricing & selection overview-->
+    <section id="plan__details" class="skew__01">
+      <section class="skew__content">
+        <section id="gourmet__details" class="gourmet">
+          <h3 class="spacer">select a monthly quantity</h3>
+          <section class="plan__card__wrap">
+            <article title="gourmet plan with 5 sandwiches" class="plan__card" data-plan="gourmet" data-count="5" data-price="80">
+              <h4 class="spacer">5 Sandwiches</h4>
+              <h4>$80/Month</h4>
+            </article>
+            <article title="gourmet plan with 50 sandwiches" class="plan__card" data-plan="gourmet" data-count="50" data-price="500">
+              <h4 class="spacer">50 Sandwiches</h4>
+              <h4>$500/Month</h4>
+            </article>
+            <article title="gourmet plan with 200 sandwiches" class="plan__card" data-plan="gourmet" data-count="200" data-price="900">
+              <h4 class="spacer">200 Sandwiches</h4>
+              <h4>$900/Month</h4>
+            </article>
+            <article title="gourmet plan with over 200 sandwiches" class="plan__card" data-plan="gourmet" data-count="200+" data-price="TBD">
+              <h4 class="spacer">200+ Sandwiches</h4>
+              <h4>Ask us!</h4>
+            </article>
+          </section>
+          <button
+            title="view basic plan"
+            class="blu__link tab_link spacer"
+            data-plan-title="basic__plan"
+            data-tab-type="link">Skip the pickles &#8594;</button>
+        </section>
+        <section id="basic__details" class="basic hide">
+          <h3 class="spacer">select a monthly quantity</h3>
+          <section class="plan__card__wrap">
+            <article title="basic plan with 5 sandwiches" class="plan__card" data-plan="basic" data-count="5" data-price="40">
+              <h4 class="spacer">5 Sandwiches</h4>
+              <h4>$40/Month</h4>
+            </article>
+            <article title="basic plan with 50 sandwiches" class="plan__card" data-plan="basic" data-count="50" data-price="300">
+              <h4 class="spacer">50 Sandwiches</h4>
+              <h4>$300/Month</h4>
+            </article>
+            <article title="basic plan with 200 sandwiches" class="plan__card" data-plan="basic" data-count="200" data-price="700">
+              <h4 class="spacer">200 Sandwiches</h4>
+              <h4>$700/Month</h4>
+            </article>
+            <article title="basic plan with over 200 sandwiches" class="plan__card" data-plan="basic" data-count="200+" data-price="TBD">
+              <h4 class="spacer">200+ Sandwiches</h4>
+              <h4>Ask us!</h4>
+            </article>
+          </section>
+          <button
+            title="view gourmet plan"
+            class="blu__link tab_link spacer"
+            data-plan-title="gourmet__plan"
+            data-tab-type="link">Add pickles &#8594;</button>
+        </section>
+        <section id="plan__agreement" class="hide"></section>
+      </section>
+    </section>
+
+    <aside class="layered__img__01">
+      <img src="assets/img/sandwich__btm__00.png" alt="stacked sandwiches" title="many delicious sandwiches"/>
+    </aside>
+  </main>
+
+  <!-- order confirmation modal -->
+  <section id="modal__overlay" class="hide">
+    <section id="modal" align="center">
+      <span class="close">&times;</span>
+      <section>
+        <figure class="plan__icon__wrap">
+          <img src="assets/img/sandwich__icon.png" alt="" title="gourmet sandwich" class="plan__icon" />
+        </figure>
+        <figure class="plan__icon__wrap">
+          <img src="assets/img/sandwich__icon.png" alt="" title="gourmet sandwich" class="plan__icon" />
+        </figure>
+        <figure class="plan__icon__wrap">
+          <img src="assets/img/sandwich__icon.png" alt="" title="gourmet sandwich" class="plan__icon" />
+        </figure>
+        <figure class="plan__icon__wrap">
+          <img src="assets/img/sandwich__icon.png" alt="" title="gourmet sandwich" class="plan__icon" />
+        </figure>
+      </section>
+      <article class="modal__content">
+      </article>
+      <section>
+        <figure class="plan__icon__wrap">
+          <img src="assets/img/sandwich__icon.png" alt="" title="gourmet sandwich" class="plan__icon" />
+        </figure>
+        <figure class="plan__icon__wrap">
+          <img src="assets/img/sandwich__icon.png" alt="" title="gourmet sandwich" class="plan__icon" />
+        </figure>
+        <figure class="plan__icon__wrap">
+          <img src="assets/img/sandwich__icon.png" alt="" title="gourmet sandwich" class="plan__icon" />
+        </figure>
+        <figure class="plan__icon__wrap">
+          <img src="assets/img/sandwich__icon.png" alt="" title="gourmet sandwich" class="plan__icon" />
+        </figure>
+      </section>
+    </section>
+  </section>
+
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
